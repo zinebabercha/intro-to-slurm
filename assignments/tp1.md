@@ -2,17 +2,17 @@
 
 ## Exercise 1: Basic Job Submission
 
-    Write a simple SLURM batch script (my_job.sh) that prints "Hello, SLURM!" to a file.
+Write a simple SLURM batch script (my_job.sh) that prints **"Hello, SLURM!"** to a file.
 
-    Submit the job using sbatch.
+Submit the job using sbatch.
 
-    Use squeue to check the status of your job.
+Use **squeue** to check the status of your job.
 
 ## Exercise 2: Resource Allocation
 
     Create a batch job that requests specific resources, such as 4 CPU cores and 4GB of memory.
 
-    Submit the job with resource requests using the --cpus-per-task and --mem flags.
+    Submit the job with resource requests using the **--cpus-per-task** and **--mem** flags.
 
     Observe how SLURM allocates the requested resources.
 
@@ -20,7 +20,7 @@
 
     Create a job array to run the same job with different input parameters. Each task should print a unique message.
 
-    Use the %A and %a placeholders within the script to access the array job ID and task ID.
+    Use the **%A** and **%a** placeholders within the script to access the array job ID and task ID.
 
     Submit the job array and observe how SLURM manages the individual tasks.
 
@@ -28,7 +28,7 @@
 
     Create two batch jobs: Job A and Job B. Job B should depend on Job A's completion.
 
-    Use the --dependency flag to specify the dependency relationship between the jobs.
+    Use the **--dependency** flag to specify the dependency relationship between the jobs.
 
     Submit both jobs and ensure Job B only starts after Job A completes.
 
@@ -48,13 +48,13 @@
 
 ## Exercise 7: Job Output and Error Handling
 
-    Redirect job output and error messages to specific files using the --output and --error flags.
+    Redirect job output and error messages to specific files using the **--output** and **--error** flags.
 
     Experiment with different ways of handling job failures and debugging.
 
 ## Exercise 8: Job Accounting
 
-    Use the sacct command to review job accounting information for a previously submitted job.
+    Use the **sacct** command to review job accounting information for a previously submitted job.
 
     Explore the job's start and end times, resource usage, and job exit code.
 
@@ -62,7 +62,7 @@
 
     Submit a job to a specific partition (if available) using the --partition flag.
 
-    Submit a job to run on a specific node using the --nodelist flag.
+    Submit a job to run on a specific node using the **--nodelist** flag.
 
     Understand how SLURM manages job placement on different nodes and partitions.
 
@@ -74,7 +74,7 @@
 
 ## Exercise 11: Interactive Jobs
 
-    Submit an interactive job using salloc to gain shell access to a compute node.
+    Submit an interactive job using **salloc** to gain shell access to a compute node.
 
     Run commands and test software interactively within the compute node.
  
