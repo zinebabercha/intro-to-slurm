@@ -1,1 +1,80 @@
-1. List the projects that you are associated with using the following command: sacctmgr show user $USER WithAssoc format=User,Account%30,DefaultAccount%30
+<h1 align="center">Exercises</h1>
+
+## Exercise 1: Basic Job Submission
+
+    Write a simple SLURM batch script (my_job.sh) that prints "Hello, SLURM!" to a file.
+
+    Submit the job using sbatch.
+
+    Use squeue to check the status of your job.
+
+## Exercise 2: Resource Allocation
+
+    Create a batch job that requests specific resources, such as 4 CPU cores and 4GB of memory.
+
+    Submit the job with resource requests using the --cpus-per-task and --mem flags.
+
+    Observe how SLURM allocates the requested resources.
+
+## Exercise 3: Job Arrays
+
+    Create a job array to run the same job with different input parameters. Each task should print a unique message.
+
+    Use the %A and %a placeholders within the script to access the array job ID and task ID.
+
+    Submit the job array and observe how SLURM manages the individual tasks.
+
+## Exercise 4: Job Dependencies
+
+    Create two batch jobs: Job A and Job B. Job B should depend on Job A's completion.
+
+    Use the --dependency flag to specify the dependency relationship between the jobs.
+
+    Submit both jobs and ensure Job B only starts after Job A completes.
+
+## Exercise 5: Priority and Fair Share
+
+    Submit three jobs with different priority levels (low, medium, high).
+
+    Observe how job priority affects job scheduling.
+
+    If your SLURM cluster uses fair share scheduling, experiment with priority adjustments based on user or group fair share usage.
+
+## Exercise 6: Time Limits
+
+    Create a batch job that runs a long-running task (e.g., a sleep command) with a specific time limit.
+
+    Observe how SLURM enforces job time limits and handles job termination.
+
+## Exercise 7: Job Output and Error Handling
+
+    Redirect job output and error messages to specific files using the --output and --error flags.
+
+    Experiment with different ways of handling job failures and debugging.
+
+## Exercise 8: Job Accounting
+
+    Use the sacct command to review job accounting information for a previously submitted job.
+
+    Explore the job's start and end times, resource usage, and job exit code.
+
+## Exercise 9: Node and Partition Selection
+
+    Submit a job to a specific partition (if available) using the --partition flag.
+
+    Submit a job to run on a specific node using the --nodelist flag.
+
+    Understand how SLURM manages job placement on different nodes and partitions.
+
+## Exercise 10: Advanced Job Scripting
+
+    Create a more complex job script that includes conditional logic, loops, or custom environment setups.
+
+    Practice using SLURM environment variables within your job scripts.
+
+## Exercise 11: Interactive Jobs
+
+    Submit an interactive job using salloc to gain shell access to a compute node.
+
+    Run commands and test software interactively within the compute node.
+ 
