@@ -78,3 +78,6 @@ Submit an interactive job using **salloc** to gain shell access to a compute nod
 
 Run commands and test software interactively within the compute node.
 
+## Exercise 12: Sinfo
+Use **sinfo** to print only the available resources
+
