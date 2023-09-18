@@ -65,58 +65,60 @@ This is array task 7, the sample name is Myriam and the sex is F.**
 
 ## Exercise 4: Job Dependencies
 
+Create two Python functions:
+- First one: Calculates the discriminant of a second-degree equation.
+- Second one: Prints the roots depending on the discriminant calculated by the first function
+  
 Create two batch jobs: Job A and Job B. Job B should depend on Job A's completion.
 
 Use the **--dependency** flag to specify the dependency relationship between the jobs.
 
 Submit both jobs and ensure Job B only starts after Job A completes.
 
-## Exercise 5: Priority and Fair Share
 
-Submit three jobs with different priority levels (low, medium, high).
+## Exercise 5: Time Limits
 
-Observe how job priority affects job scheduling.
-
-If your SLURM cluster uses fair share scheduling, experiment with priority adjustments based on user or group fair share usage.
-
-## Exercise 6: Time Limits
-
-Create a batch job that runs a long-running task (e.g., a sleep command) with a specific time limit.
+Create a batch job that runs a long-running task (e.g., a sleep command ```sleep 600```) with a specific time limit (eg. 5 minutes).
 
 Observe how SLURM enforces job time limits and handles job termination.
 
-## Exercise 7: Job Output and Error Handling
+## Exercise 6: Job Output and Error Handling
 
 Redirect job output and error messages to specific files using the **--output** and **--error** flags.
 
 Experiment with different ways of handling job failures and debugging.
 
-## Exercise 8: Job Accounting
+## Exercise 7: Job Accounting
 
 Use the **sacct** command to review job accounting information for a previously submitted job.
 
 Explore the job's start and end times, resource usage, and job exit code.
 
-## Exercise 9: Node and Partition Selection
+Example of output:
+```
+JobID    JobName  Partition    Account  AllocCPUS               Start                 End    Elapsed     MaxRSS  MaxVMSize ExitCode 
+------------ ---------- ---------- ---------- ---------- ------------------- ------------------- ---------- ---------- ---------- -------- 
+5836127_1    montecarl+       defq msda-acc+           1 2023-09-18T07:07:02 2023-09-18T07:19:52   00:12:50                            0:0 
+5836127_1.b+      batch            msda-acc+           1 2023-09-18T07:07:02 2023-09-18T07:19:52   00:12:50      3772K    340944K     0:15 
+```
+
+## Exercise 8: Node and Partition Selection
 
 Submit a job to a specific partition (if available) using the --partition flag.
 
-Submit a job to run on a specific node using the **--nodelist** flag.
+Submit a job on node13.
+
+Submit a job with excluding nodes node02,node03,node15.
 
 Understand how SLURM manages job placement on different nodes and partitions.
 
-## Exercise 10: Advanced Job Scripting
 
-Create a more complex job script that includes conditional logic, loops, or custom environment setups.
-
-Practice using SLURM environment variables within your job scripts.
-
-## Exercise 11: Interactive Jobs
+## Exercise 9: Interactive Jobs
 
 Submit an interactive job using **salloc** to gain shell access to a compute node.
 
 Run commands and test software interactively within the compute node.
 
-## Exercise 12: Sinfo
+## Exercise 10: Sinfo
 Use **sinfo** to print only the available resources
 
