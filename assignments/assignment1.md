@@ -52,11 +52,16 @@ This is array task 10, the sample name is Sara and the sex is F.
 
 ```
 
-Create a job array to run the same job with different input parameters. Each task should print a unique message.
+N.B: Limit the number of tasks run at once to 2.
 
-Use the **%A** and **%a** placeholders within the script to access the array job ID and task ID.
+Write batch file using ```--array``` command that reads this config file and stores the output below to ```output.txt```.
 
-Submit the job array and observe how SLURM manages the individual tasks.
+```bash
+$ cat output.txt 
+This is array task 3, the sample name is Amal and the sex is F.
+This is array task 5, the sample name is Ali and the sex is M.
+This is array task 7, the sample name is Myriam and the sex is F.**
+```
 
 ## Exercise 4: Job Dependencies
 
