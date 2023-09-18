@@ -122,3 +122,8 @@ Run commands and test software interactively within the compute node.
 ## Exercise 10: Sinfo
 Use **sinfo** to print only the available resources
 
+Example of output:
+```bash
+node[01,03-04,09-10,14,16] mix 169/135/0/304
+node13,visu01 idle 0/88/0/88
+```
