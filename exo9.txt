@@ -1,0 +1,7 @@
+salloc --ntasks=1 --time=1:00:00
+sinfo
+module load gcc
+pwd
+gcc -o cercle cercle.c
+./cercle
+python functions.py
