@@ -1,0 +1,2 @@
+sacct -j 5842646 --format=JobID,JobName,Partition,Account,AllocCPUS,Submit,Start,End,Elapsed,ExitCode
+
