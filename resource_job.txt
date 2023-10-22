@@ -1,0 +1,3 @@
+Submit the job using: sbatch resource_job.sh
+Observe how SLURM allocates the requested resources using squeue --user=zineb.abercha
+or the id of this job
