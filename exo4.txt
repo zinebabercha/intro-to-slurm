@@ -1,0 +1,4 @@
+to submit jobs use:
+sbatch exo4jobA.sh
+sbatch exo4jobB.sh
+
