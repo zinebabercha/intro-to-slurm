@@ -1,0 +1,3 @@
+to Observe how SLURM enforces job time limits and handles job termination:
+ scontrol show job 5844417
+
