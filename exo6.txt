@@ -1,0 +1,7 @@
+in all exercises i use:
+
+#!/bin/bash
+#SBATCH --job-name=my_job                     # Job name
+#SBATCH --output=output.txt                   # Output file for standard output
+#SBATCH --error=error.log                     # Error file for standard error
+#SBATCH --ntasks=1                            # Number of tasks
