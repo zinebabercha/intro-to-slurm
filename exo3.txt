@@ -4,5 +4,5 @@ then
 chmod +x exo3.sh
 then to limit to 2 use:
 parallel --delay 1 -j 2 ./exo3.sh ::: {1..10} > output.txt
-
+or use 3,5,7 or % or even range 
 
